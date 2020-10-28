@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ecf2f8;
+}
+
+.wrapper__container {
+  width: 680px;
+  background-color: #fff;
+  height: 300px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 22px 50px gray;
+          box-shadow: 5px 22px 50px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper__container-img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-image: url("../images/drawers.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper__container__description {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.wrapper__container__description__describe {
+  height: 100%;
+  padding: 20px;
+}
+
+.wrapper__container__description__describe h1 {
+  color: #48556a;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.wrapper__container__description__describe p {
+  color: #48556a;
+}
+
+.wrapper__container__description__describe_picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper__container__description__describe_picture img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wrapper__container__description__describe_picture-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.wrapper__container__description__describe_picture-info h3 {
+  font-size: 14px;
+}
+
+.wrapper__container__description__describe_picture-info p {
+  font-size: 12px;
+}
+
+.wrapper__container__description__describe_picture-div {
+  height: 50px;
+  width: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper__container__description__describe_picture-div img {
+  height: 20px;
+}
+
+.wrapper__container__description__describe_picture-div-share {
+  height: 30px;
+}
+
+.wrapper__container__description__describe_picture-div-share-info {
+  position: absolute;
+  top: -100%;
+  left: -150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3e52a3;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 40px;
+  width: 200px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.wrapper__container__description__describe_picture-div-share-info img {
+  height: 20px;
+}
+
+.wrapper__container__description__describe_picture-div-share-info h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ecf2f8;
+}
+
+.scaleBox {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.rotateBox {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (max-width: 800px) {
+  .wrapper__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px;
+    height: 680px;
+  }
+  .wrapper__container__description__describe_picture {
+    position: relative;
+  }
+  .wrapper__container__description__describe_picture-div {
+    position: static;
+  }
+  .wrapper__container__description__describe_picture-div-share-info {
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
